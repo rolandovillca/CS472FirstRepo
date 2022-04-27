@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-color: rgb(244, 255, 251);
+    font-family:Verdana, sans-serif;
+}
+
+body a{
+    color: blue;
+}
+body a:visited{
+    color: green;
+}
+body h1{
+    color: rgb(4, 97, 4);
+    font-size: 2em;
+    text-align: center;
+}
+body a{
+    text-decoration: none;
+}
+/* pseudo-classes */
+body a:hover{
+    text-decoration:underline;
+}
+/** main and components */
+#main {
+    margin: 2em;
+}
+#main ol{
+    display: flex;
+    flex-direction: column-reverse;
+}
+nav{
+    background-color: rgb(226, 247, 239);
+    padding: 1em;
+    border-radius: 2em;
+    border-width: 1px;
+}
+hr{
+    border-color: rgb(175, 221, 178);
+    border-style: dotted;
+}
+/* pseudo-element */
+nav p::first-letter{
+    font-size: 1.8em;
+    color: green;
+    float: left;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.description h2{
+    color: green;
+    font-size: 1.2em;
+}
+.description img{
+    width: 200px;
+}
+.description em{
+    font-size: .85em;
+    color: grey;
+}
+.description.moods ul li{
+    display: inline-block;
+    vertical-align:text-top;
+}
+
+.description ul.sub-list {
+    list-style: none;
+}
+.description ul li>span {
+    color: orange;
+    font-weight: bold;
+}
+.description ul li>p {
+    margin-left: 3em;
+}
+
+/** Footer */
+footer{
+    background-color: grey;
+    text-align: center;
+    
+}
+footer ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+}
+footer ul li{
+    display: inline-block;
+}
