@@ -1,0 +1,20 @@
+div {
+    border: 4px solid black;
+    margin-top: 5px;
+}
+
+#a {
+    height: 350px;
+}
+
+.floaty {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+#d {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
