@@ -1,0 +1,17 @@
+/* .container {
+    display: flex;
+} */
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    /* margin-bottom: 20px;
+    margin-right: 10px; */
+    display: inline-block;
+}
+p {
+    display: inline-block;
+}
+a {
+    display: block;
+}

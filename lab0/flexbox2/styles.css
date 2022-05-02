@@ -1,0 +1,14 @@
+/* img, p {
+    display: inline-block;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+img {
+    width: 400;
+}

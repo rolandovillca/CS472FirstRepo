@@ -1,0 +1,39 @@
+/* div AND red in the same html element */
+div.red { 
+    background-color: red;
+}
+div.red.green-text {
+    background-color: orange;
+}
+#blue {
+    background-color: blue;
+}
+span, li {
+    background-color: brown;
+}
+/* span OR li AND red */
+span, li.red {
+    background-color: pink;
+}
+/* descendent selectors - elements inside other elements */
+ul li {
+    background-color: aquamarine;
+}
+div b {
+    background-color: blueviolet;
+}
+/* sibling electors */
+li.red ~ li {
+    background-color: cyan;
+}
+
+/* pseudo selectors */
+li:hover {
+    background-color: chartreuse;
+}
+input:focus {
+    background-color: chartreuse;
+}
+input:checked {
+    margin: 50px;
+}
