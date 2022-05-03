@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+</head>
+<body>
+    <input type="text" value="">
+    <input type="button" value="Click" >
+    <form action="https://www.google.com/search" method="post">
+        <input type="text" name="q" id="" pattern="">
+        <input type="button" value="">
+    </form>
+    <script>
+        window.onload = function() {
+            document.getElementById("myButton").onclick = checkEmail;
+        }
+        checkEmail = function() {
+            let value = document.getElementById("myText").value;
+            // let jhonny = /^[a-zA-Z_-]/;
+            let jhonny = new RegExp("^[a-zA-Z_-]+@[a-zA-Z_-]+\.[a-zA-Z]{2,3}$");
+            if (value.match(jhonny)) {
+                console.log(value);
+            } else {
+                alert("Incorrect Email Format");
+            }
+        }
+        // ^[a-zA-Z_-0-9]+@+  \.+[a-zA-Z]{2,3}$
+        // /^[a-zA-Z_-0-9]+@+  \.+[a-zA-Z]{2,3}$/
+    </script>
+    
+</body>
+</html>
