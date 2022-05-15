@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab13 - q2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"> </script>
+    <script>
+      function theme(color) {
+        $("body").attr("class", color);
+      }
+    </script>
+    <link rel="stylesheet" href="myassets/css/day.css">
+    <link rel="stylesheet" href="myassets/css/night.css">
+    <link rel="stylesheet" href="myassets/js/script.js">
+</head>
+<body>
+    <form method="POST" action="/result">
+      <label>Name</label>
+      <input type="text" name="name">
+      <label>Age</label>
+      <input type="text" name="age">
+      <input type="submit" value="Submit Query">
+    </form>
+    <img src="myassets/images/black-cat.jpg" alt="" srcset="">
+    <div>
+      <a href="#" onclick="theme('day')">Day</a>
+      <a href="#" onclick="theme('night')">Night</a>
+    </div>
+</body>
+</html>
