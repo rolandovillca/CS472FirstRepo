@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        function theme(color) {
+            $("body").attr("class", color);
+        }
+    </script>
+    <link rel="stylesheet" href="css/day.css">
+    <link rel="stylesheet" href="css/night.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    This page was loaded at <%= time %>
+    <div>
+        <img src="images/black-cat.jpg" alt="" srcset="">
+    </div>
+    <div>
+        <a href="#" onclick="theme('day')">Day</a>
+        <a href="#" onclick="theme('night')">Night</a>
+      </div>
+</body>
+</html>
